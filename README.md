@@ -64,8 +64,8 @@
 
 ## 📬 Связаться со мной
 
-[![Telegram](https://img.shields.io/badge/Telegram-@your_telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/your_telegram)
-[![Gmail](https://img.shields.io/badge/Gmail-your.email@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-@your_telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/MonamU3)
+[![Gmail](https://img.shields.io/badge/Gmail-your.email@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:gleb.yulegin@gmail.com)
 
 ---
 
