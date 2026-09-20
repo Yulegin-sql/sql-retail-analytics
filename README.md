@@ -1,212 +1,72 @@
-# \# 📊 Анализ продаж магазина (Online Retail II)
+# 📊 Анализ продаж магазина
 
-# 
+### 🎯 SQL-анализ розничных продаж на PostgreSQL
 
-# \### 🎯 SQL-анализ розничных продаж на PostgreSQL
+Проанализировал 1 067 371 запись из реального интернет-магазина. Выявил топ-товары, динамику выручки по месяцам, портрет ключевых клиентов и перспективные рынки.
 
-# 
+⭐ *Ищу стажировку или Junior-позицию в аналитике данных / SQL-разработке*
 
-# Проанализировал 1 067 371 запись из реального интернет-магазина. Выявил топ-товары, динамику выручки по месяцам, портрет ключевых клиентов и перспективные рынки.
+---
 
-# 
+## 🛠 Стек проекта
 
-# ⭐ \*Ищу стажировку или Junior-позицию в аналитике данных / SQL-разработке\*
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-316192?style=flat-square&logo=postgresql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Advanced-4479A1?style=flat-square)
+![DBeaver](https://img.shields.io/badge/DBeaver-Client-372B4C?style=flat-square)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat-square&logo=git&logoColor=white)
 
-# 
+---
 
-# \---
+## 📋 Мои запросы
 
-# 
+| Запрос | Описание | Стек |
+| :--- | :--- | :--- |
+| [Топ-5 товаров](queries/1_top_products.sql) | Топ товаров по количеству продаж | SQL |
+| [Выручка по месяцам](queries/2_revenue_by_month.sql) | Динамика выручки, сезонность | SQL |
+| [Топ-3 клиента](queries/3_top_customers.sql) | Рейтинг клиентов через RANK() | SQL |
+| [Скользящее среднее](queries/4_moving_average.sql) | Сглаживание тренда за 3 месяца | SQL |
+| [Оптимизация через индекс](queries/5_index_optimization.sql) | Ускорение запроса через CREATE INDEX | SQL |
+| [VIEW для отчёта](queries/6_cte_view.sql) | Переиспользуемое представление | SQL |
+| [Анализ по странам](queries/7_country_analysis.sql) | Топ-10 рынков и их доля в выручке | SQL |
 
-# \## 🛠 Стек проекта
+---
 
-# 
+## 📈 Ключевые результаты
 
-# !\[PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-316192?style=for-the-badge\&logo=postgresql\&logoColor=white)
+- 🏆 **Топ-5 товаров:** WORLD WAR 2 GLIDERS, WHITE HANGING HEART, JUMBO BAG RED RETROSPOT
+- 📅 **Пик продаж:** ноябрь–декабрь (рождественский сезон)
+- 💎 **Топ-3 клиента:** 18102 (UK), 14646 (Нидерланды), 14156 (Ирландия) — каждый потратил 300 000+
+- 🇬🇧 **Великобритания — основной рынок:** ~85% выручки
+- 🎯 **Премиум-ниши:** Нидерланды и Ирландия — высокий средний чек при малом числе заказов
 
-# !\[SQL](https://img.shields.io/badge/SQL-Advanced-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+---
 
-# !\[DBeaver](https://img.shields.io/badge/DBeaver-Client-372B4C?style=for-the-badge\&logo=dbeaver\&logoColor=white)
+## 🔍 Что я умею (на примере проекта)
 
-# !\[Git](https://img.shields.io/badge/Git-Version\_Control-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+- 📌 SELECT, WHERE, JOIN, GROUP BY, HAVING
+- 📌 Подзапросы и CTE (WITH)
+- 📌 Оконные функции (RANK, AVG OVER, SUM OVER)
+- 📌 Работа с датами (DATE_TRUNC, ROWS BETWEEN)
+- 📌 Создание VIEW для переиспользуемых отчётов
+- 📌 Индексы и базовая оптимизация запросов
 
-# 
+---
 
-# \---
+## 🚀 Как запустить проект
 
-# 
+- 📥 Установить PostgreSQL и DBeaver
+- 📦 Скачать датасет [Online Retail II (UCI)](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)
+- 🗄 Создать БД `online_retail` и таблицу `retail`
+- 📤 Импортировать CSV в таблицу
+- ▶️ Выполнить любой запрос из папки `queries/`
 
-# \## 🎯 Цель проекта
+---
 
-# 
+## 📬 Связаться со мной
 
-# Продемонстрировать навыки написания сложных SQL-запросов: от базовой агрегации до оконных функций, CTE и оптимизации через индексы.
+[![Telegram](https://img.shields.io/badge/Telegram-@your_telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/your_telegram)
+[![Gmail](https://img.shields.io/badge/Gmail-your.email@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
 
-# 
+---
 
-# \---
-
-# 
-
-# \## 📈 Ключевые результаты
-
-# 
-
-# \- 🏆 \*\*Топ-5 товаров:\*\* WORLD WAR 2 GLIDERS, WHITE HANGING HEART, JUMBO BAG RED RETROSPOT
-
-# \- 📅 \*\*Пик продаж:\*\* ноябрь–декабрь (рождественский сезон)
-
-# \- 💎 \*\*Топ-3 клиента:\*\* 18102 (UK), 14646 (Нидерланды), 14156 (Ирландия) — каждый потратил 300 000+
-
-# \- 🇬🇧 \*\*Великобритания — основной рынок:\*\* \~85% выручки
-
-# \- 🎯 \*\*Премиум-ниши:\*\* Нидерланды и Ирландия — высокий средний чек при малом числе заказов
-
-# 
-
-# \---
-
-# 
-
-# \## 🔍 Какие навыки демонстрирует проект
-
-# 
-
-# | Навык | Где применён |
-
-# | :--- | :--- |
-
-# | `GROUP BY`, `SUM`, `COUNT` | Запросы 1, 2 |
-
-# | `RANK() OVER` | Запрос 3 |
-
-# | `AVG() OVER (ROWS BETWEEN ...)` | Запрос 4 |
-
-# | Создание индексов, оптимизация | Запрос 5 |
-
-# | `CREATE VIEW`, `COUNT(DISTINCT)` | Запрос 6 |
-
-# | Два CTE, `SUM() OVER ()`, `LIMIT` | Запрос 7 |
-
-# 
-
-# \---
-
-# 
-
-# \## 📂 Структура репозитория
-
-# 
-
-# \- \*\*sql-retail-analytics/\*\*
-
-# &#x20; - \*\*queries/\*\*
-
-# &#x20;   - 1\_top\_products.sql — Топ-5 товаров по продажам
-
-# &#x20;   - 2\_revenue\_by\_month.sql — Выручка по месяцам
-
-# &#x20;   - 3\_top\_customers.sql — Топ-3 клиента (RANK)
-
-# &#x20;   - 4\_moving\_average.sql — Скользящее среднее за 3 месяца
-
-# &#x20;   - 5\_index\_optimization.sql — Оптимизация через индекс
-
-# &#x20;   - 6\_cte\_view.sql — VIEW для отчёта
-
-# &#x20;   - 7\_country\_analysis.sql — Анализ по странам
-
-# &#x20; - README.md
-
-# 
-
-# \---
-
-# 
-
-# \## 📋 Мои запросы
-
-# 
-
-# | № | Запрос | Что демонстрирует |
-
-# | :--- | :--- | :--- |
-
-# | 📊 | \[Топ-5 товаров](queries/1\_top\_products.sql) | Агрегация, `GROUP BY`, `ORDER BY`, `LIMIT` |
-
-# | 📅 | \[Выручка по месяцам](queries/2\_revenue\_by\_month.sql) | `DATE\_TRUNC`, `ROUND`, фильтрация возвратов |
-
-# | 💎 | \[Топ-3 клиента](queries/3\_top\_customers.sql) | Оконная функция `RANK()`, CTE |
-
-# | 📈 | \[Скользящее среднее](queries/4\_moving\_average.sql) | `AVG() OVER (ROWS BETWEEN ...)` |
-
-# | ⚡ | \[Оптимизация через индекс](queries/5\_index\_optimization.sql) | `CREATE INDEX`, замер времени |
-
-# | 📑 | \[VIEW для отчёта](queries/6\_cte\_view.sql) | `CREATE VIEW`, `COUNT(DISTINCT)` |
-
-# | 🌍 | \[Анализ по странам](queries/7\_country\_analysis.sql) | Два CTE, `SUM() OVER ()` |
-
-# 
-
-# \---
-
-# 
-
-# \## 🚀 Как запустить проект
-
-# 
-
-# 1\. Установите PostgreSQL и DBeaver
-
-# 2\. Скачайте датасет \[Online Retail II (UCI)](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)
-
-# 3\. Создайте БД `online\_retail` и таблицу `retail` (SQL-скрипт в папке `queries/`)
-
-# 4\. Импортируйте CSV в таблицу
-
-# 5\. Выполните любой запрос из папки `queries/`
-
-# 
-
-# \---
-
-# 
-
-# \## 📚 Чему я научился на этом проекте
-
-# 
-
-# \- 📌 Правильно фильтровать данные \*\*до\*\* агрегации (`WHERE` vs `HAVING`)
-
-# \- 📌 Понимать \*\*порядок выполнения\*\* SQL-запроса
-
-# \- 📌 Использовать \*\*оконные функции\*\* для рейтингов и скользящих средних
-
-# \- 📌 Разбивать сложные задачи на \*\*CTE\*\* для читаемости
-
-# \- 📌 Создавать \*\*индексы\*\* и замерять их эффективность
-
-# \- 📌 Оформлять код как \*\*профессиональный разработчик\*\*
-
-# 
-
-# \---
-
-# 
-
-# \## 📬 Связаться со мной
-
-# 
-
-# \[!\[Telegram](https://img.shields.io/badge/Telegram-@MonamU3-2CA5E0?style=for-the-badge\&logo=telegram\&logoColor=white)](https://t.me/MonamU3)
-
-# \[!\[Gmail](https://img.shields.io/badge/Gmail-gleb.yulegin@gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:gleb.yulegin@gmail.com)
-
-# 
-
-# \---
-
-# 
-
-# ⭐ \*\*Если проект оказался полезным — поставь звезду репозиторию!\*\*
-
+⭐ **Если проект оказался полезным — поставь звезду репозиторию!**
